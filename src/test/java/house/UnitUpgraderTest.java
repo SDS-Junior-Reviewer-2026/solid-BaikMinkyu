@@ -1,9 +1,7 @@
 package house;
 
-import house.PenthouseSuite;
-import house.Studio;
-import house.UnitUpgrader;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class UnitUpgraderTest {
     @Test
@@ -13,7 +11,7 @@ public class UnitUpgraderTest {
         UnitUpgrader upgrader = new UnitUpgrader();
         upgrader.upgrade(penthouse);
 
-        assertEquals(1540, penthouse.squareFootage);
+        Assertions.assertEquals(1540, penthouse.squareFootage);
     }
 
     @Test
@@ -22,7 +20,7 @@ public class UnitUpgraderTest {
         UnitUpgrader upgrader = new UnitUpgrader();
         upgrader.upgrade(penthouse);
 
-        assertEquals(5, penthouse.numberOfBedrooms);
+        Assertions.assertEquals(5, penthouse.numberOfBedrooms);
     }
 
     @Test
@@ -32,7 +30,7 @@ public class UnitUpgraderTest {
         UnitUpgrader upgrader = new UnitUpgrader();
         upgrader.upgrade(studio);
 
-        assertEquals(590, studio.squareFootage);
+        Assertions.assertEquals(590, studio.squareFootage);
     }
 
     @Test
@@ -41,6 +39,6 @@ public class UnitUpgraderTest {
         UnitUpgrader upgrader = new UnitUpgrader();
         upgrader.upgrade(studio);
 
-        assertEquals(0, studio.numberOfBedrooms);
+        Assertions.assertEquals(0, studio.numberOfBedrooms);
     }
 }

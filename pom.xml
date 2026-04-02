@@ -11,8 +11,8 @@
     <name>solid</name>
 
     <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
     </properties>
 
     <dependencies>
@@ -20,7 +20,7 @@
          <dependency>
              <groupId>org.junit.jupiter</groupId>
              <artifactId>junit-jupiter-api</artifactId>
-             <version>5.14.1</version>
+             <version>6.0.3</version>
              <scope>test</scope>
          </dependency>
     </dependencies>

@@ -1,13 +1,14 @@
 package birds;
 
-import birds.Penguin;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class PenguinTest {
     @Test
     public void testItLosesFeathers() {
         Penguin penguin = new Penguin(5);
         penguin.molt();
-        assertEquals(4, penguin.numberOfFeathers);
+        Assertions.assertEquals(4, penguin.numberOfFeathers);
     }
 
 
@@ -15,6 +16,6 @@ public class PenguinTest {
     public void testItCanSwim() {
         Penguin penguin = new Penguin(5);
         penguin.swim();
-        assertEquals("in the water", penguin.currentLocation);
+        Assertions.assertEquals("in the water", penguin.currentLocation);
     }
 }
